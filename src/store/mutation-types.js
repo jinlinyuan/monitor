@@ -1,0 +1,1 @@
+export const SET_PARAMSLIST = 'SET_PARAMSLIST'

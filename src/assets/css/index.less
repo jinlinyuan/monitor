@@ -1,0 +1,58 @@
+@import url(iconfont.less);
+
+html,body {
+	height: 100%;
+}
+body {
+  margin: 0;
+}
+.page-container {
+	height: 100%;
+	.page-sidebar-wrapper {
+		position: absolute;
+	    top: 0;
+	    bottom: 0;
+	    left: 0;
+	    width: 200px;
+	    background-color: #545c64;
+	    overflow: auto;
+	    z-index: 50;
+	}
+	.page-content-wrapper {
+		box-sizing: border-box;
+		position: relative;
+		height: 100%;
+		padding-left: 200px;
+		padding-top: 50px;
+		padding-right: 0;
+		.list {
+			position: absolute;
+			padding: 10px;
+			top:110px;
+			bottom:10px;
+			left:185px;
+			width: 300px;
+			background-color: #fff;
+			overflow: auto;
+		}
+		.page-content {
+			position: absolute;
+			bottom:0;
+			right:0;
+			left: 200px;
+			top:50px;
+			overflow: auto;
+			.box-card {
+				.el-card__header {
+					padding: 10px;
+				}
+				.el-card__body {
+					padding: 0;
+				}
+			}
+			.el-table td, .el-table th {
+				padding: 10px 0;
+			}
+		}
+	}
+}
